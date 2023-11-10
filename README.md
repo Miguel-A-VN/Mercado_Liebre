@@ -6,4 +6,16 @@
 
 - #### FRIST SPRINT
 
-    !
+    ![0](/frist-sprint/Screenshot%202023-11-10%20092028.png)
+    ![0](/frist-sprint/Screenshot%202023-11-10%20092034.png)
+    ![0](/frist-sprint/Screenshot%202023-11-10%20092040.png)
+    ![0](/frist-sprint/Screenshot%202023-11-10%20092048.png)
+    ![0](/frist-sprint/Screenshot%202023-11-10%20092055.png)
+    ![0](/frist-sprint/Screenshot%202023-11-10%20092100.png)
+    ![0](/frist-sprint/Screenshot%202023-11-10%20092114.png)
+    ![0](/frist-sprint/Screenshot%202023-11-10%20092118.png)
+    ![0](/frist-sprint/Screenshot%202023-11-10%20092128.png)
+    ![0](/frist-sprint/Screenshot%202023-11-10%20092135.png)
+    ![0](/frist-sprint/Screenshot%202023-11-10%20092140.png)
+    ![0](/frist-sprint/Screenshot%202023-11-10%20092151.png)
+    
