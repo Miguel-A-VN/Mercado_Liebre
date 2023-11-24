@@ -1,0 +1,119 @@
+.form_sing-up{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 80vh;
+    margin: 20px auto;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: #ebebeb;
+    border-radius: 4px;
+
+    & .form {
+        margin: auto;
+    }
+
+    & .title{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-top: 25px ;
+    }
+
+    & .title-of-field{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 6px;
+        margin-bottom: 5px;
+    } 
+
+    & form{
+        padding: 20px
+    }
+
+    & .fieldset{
+        width: 100%;
+        border: none;
+        margin-bottom: 5px;
+    }
+    
+    & .field{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+        align-items: center;
+    }
+
+    & label{
+        width: 100%;
+    }
+
+    & .rellenar{
+        border: none;
+        width: 100%;
+        height: 30px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+
+    & .selectores{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    
+    & h3 {
+        width: 100%;
+    }
+    
+    & .checkbox{
+        margin-left: 15px;
+
+        & .check{
+            width: 100%;
+            margin-top: 2px;
+            margin-bottom: 10px;
+        }
+    }
+
+    & .radios{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+
+        & label{
+            margin-left: 25px;
+        }
+
+    }
+
+    & .porfile{
+        display: inline;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+
+        .button input{
+            
+            background: #0000;
+            border: none;
+            margin: auto;
+            color: #fff;
+        }
+
+        .button {
+            display: flex;
+            background-color: #1259c3;
+            width: 20%;
+            height: 30px;
+            text-align: center;
+            border: 1px solid #3336;
+            
+        }
+    }
+}

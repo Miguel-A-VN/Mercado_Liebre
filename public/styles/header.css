@@ -1,0 +1,95 @@
+/* -------------------------------------------- */
+       /*🟢HEADER */
+.header{
+    background-color: #eac926;
+    padding: 10px;
+}
+
+
+/* -------------------------------------------- */
+         /* SECTION ONE */
+.nav_top{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+/* -------------------------------------------- */
+.nav_top_logo{
+    width: 125px;
+}
+
+/* -------------------------------------------- */
+              /* ---SHEARH-BAR--- */
+.nav_top_form{
+    display: flex;
+    width: 25%;
+    background-color: #fff;
+    border-radius: 4px;
+    height: 30px;
+    justify-content: center;
+
+    
+    & .nav_top_form_input-bar-search{
+        background-color: #00000000;
+        outline: none;
+        border: none;
+        width: 80%;
+    }
+
+    & .nav_top_form_button{
+        background-color: #00000000;
+        padding: 3px;
+        border: 0px;
+        border-left: solid 1px #3333;
+    }
+    
+}
+
+.nav_top_form:hover{
+    outline: solid 1px #000a;
+    
+}
+
+
+.nav_top_form_button{
+    background-color: #00000000;
+    padding: 3px;
+    border: 0px;
+}
+/* -------------------------------------------- */
+/* ---COPY--- */
+.nav_top_copy-header{
+    
+    display: block;
+    font-size: 12px;
+    text-align: center;
+
+}
+/* -------------------------------------------- */
+/* SECTION TWO */
+.nav_botton{
+    display: none;
+}
+/* ------------------------------------------ */
+/* BUrguer-menu */
+
+.burger-menu{
+    display: flex;
+    background-color: #1259c3 ;
+    width: 2em;
+    height: 2em;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+    
+}
+
+.fa-bars{
+    margin:auto;
+    color: #fff;
+    font-size: 1em;
+}

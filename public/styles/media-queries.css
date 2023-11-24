@@ -1,0 +1,156 @@
+/* ---TABLET--- */
+@media screen and (min-width: 768px) {
+    
+    /* ---HEADER--- */
+    .nav_top{
+        justify-content: center;
+    }
+
+    .nav_top_form{
+        width: 25%;
+        margin-left: 5%;
+
+        & .nav_top_form_input-bar-search{
+            width: 92%;
+        }
+    }
+
+    .nav_top_copy-header{
+        margin-left: 5% ;
+        width: 160px;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+    
+    .nav_botton{
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: space-around;
+        /* align-items: center; */
+    }
+
+    .nav_ul{
+        list-style-type: none;
+        display: flex;
+        justify-content:space-between;
+        
+    }
+
+    .nav_ul_li{
+
+        display: flex; 
+
+        & a{
+            text-decoration: none;
+            color: #333b;
+        }
+
+        & .a-container-left,
+          .a-container-rigth{
+            display: flex;
+        }
+
+        & .a-container-rigth .a_text{
+            display: none;
+        }
+
+        & .a_text{
+            margin: 0px 5px ;
+        }
+
+        & .a_icon{
+            display: flex;
+            margin: 0px 10px 0px 0px;
+        }
+        
+
+        
+    }
+    
+    /* ---MAIN--- */
+    
+    .card{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+    /* ---FOOTER--- */
+    
+    .footer_section{
+        width: 30%;
+    }
+    
+    .metodo-de-pago{
+        padding-right: 5px;
+        border-right: 1px solid #3336 ;
+    }
+    .seguridad{
+        padding-left: 5px;
+        border-left: 1px solid #3336 ;
+        
+    }  
+
+    /* ---sing up---*/
+    .form_sing-up{
+        width: 50%;
+
+        & .rellenar{
+            width: 200%;
+        }
+    }
+
+    .log-in_form{
+
+        width: 50%;
+        
+        & .title{
+            margin-bottom: 6%;
+        }
+
+
+    }
+}
+
+/* ---LAPTOP--- */
+@media screen and (min-width: 1024px) {
+    /* ---HEADER--- */
+
+
+    .nav_top_logo{
+        width: 15%;
+    }
+
+    .nav_top_form{
+        width: 26%;
+
+        margin: 0% 5%;
+        
+    }
+
+    .nav_top_copy-header{
+        
+    }
+
+    & .nav_ul_li{
+
+        & .a-container-rigth .a_text{
+            display: flex;
+        }
+    
+    }
+
+    /* ---sing up---*/
+    & .form_sing-up{
+        width: 40%;
+
+        
+    }
+
+    & .log-in_form{
+
+        & .title{
+            margin-bottom: 3%;
+        }
+    }
+}

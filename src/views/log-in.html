@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-es">
+
+    <head>
+
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Mercado liebre - log-in</title>
+
+        <!-- icon del tab  -->
+        <link rel="icon" type="image/svg" href="/img/svg/favicon.svg" />
+
+        <!-- Nrmalize off ↓ -->
+        <!-- <link rel="stylesheet" href="/styles/normalize.css" /> -->
+
+        <!-- Estilos en general ↓ --> 
+        <!-- NOTA: los links tambien son afectados por css -->
+        
+        <link rel="stylesheet" href="/styles/header.css" />
+        
+        <link rel="stylesheet" href="/styles/log-in.css" />
+        
+        <link rel="stylesheet" href="/styles/footer.css" />
+        
+        <link rel="stylesheet" href="/styles/media-queries.css" /> 
+
+        <!-- <link rel="stylesheet" href="/style/carrusel.css"> -->
+
+        <!-- EL normalize que estoy creando ↓ -->
+        <link rel="stylesheet" href="/styles/general.css" />
+
+        <!-- Font-awesome ↓ -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Google-fonts_Tipografia 'roboto' ↓ -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Roboto&display=swap"
+            rel="stylesheet" />
+
+        <!-- hoja de estilos que dieron en la consigna ↓ -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+
+
+    </head>
+
+    <body>
+        
+        <header class="header">
+
+            <nav class="nav bar-de-navegacion">
+    
+                <section class="nav_top">
+    
+                    <div class="nav_top_logo">
+                       <a href="/"><img src="/img/svg/logo-mercado-liebre.svg" alt="mercado-libre-logo"/></a> 
+                    </div>
+    
+                    <form class="nav_top_form barra-de-busqueda" action="" method="">
+                        <label class="nav_top_form_label-bar-serach" for="get"></label>
+                        <input class="nav_top_form_input-bar-search" type="search" id="get" name="get"
+                            placeholder="search..." />
+                        <button type="submit" class="nav_top_form_button button-bar-of-search"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+    
+                    <div class="nav_top_copy-header buy-in-installments-and-without-a-credit-card">
+                        <h3><i class="fa-solid fa-hand-holding-dollar"></i>buy in installments and without a credit card</h3>
+                    </div>
+    
+                </section>
+    
+                <section class="nav_botton">
+    
+                    <ul class="nav_ul nav_ul-left">
+    
+                        <li class="nav_ul_li offers">
+    
+                            <a href="#" class="a-container-left">
+                                <div class="a_text">
+                                    offers
+                                </div>
+                            </a>
+    
+                        </li>
+    
+                        <li class="nav_ul_li Official-store">
+    
+                            <a href="#" class="a-container-left">
+                                <div class="a_text">
+                                    Official store
+                                </div>
+                            </a>
+    
+                        </li>
+    
+                        <li class="nav_ul_li sell">
+    
+                            <a href="#" class="a-container-left">
+                                <div class="a_text">Sell</div>
+                            </a>
+    
+                        </li>
+    
+                        <li class="nav_ul_li Help">
+    
+                            <a href="#" class="a-container-left">
+                                <div class="a_text">
+                                    Help
+                                </div>
+                            </a>
+    
+                        </li>
+    
+                    </ul>
+    
+                    <ul class="nav_ul nav_ul-right">
+    
+                        <li class="nav_ul_li Sign-up">
+                            <a href="/sign-up" class="a-container-rigth">
+    
+                                <span class="a_text">
+                                    Sign up
+                                </span>
+    
+                                <div class="a_icon">
+                                    <i class="fa-regular fa-solid fa-id-card"></i>
+                                </div>
+    
+                            </a>
+                        </li>
+    
+                        <li class="nav_ul_li log-in">
+                            <a href="/log-in" class="a-container-rigth">
+    
+                                <span class="a_text">
+                                    Log in
+                                </span>
+    
+                                <div class="a_icon">
+                                    <i class="fa-solid fa-right-to-bracket"></i>
+                                </div>
+    
+                            </a>
+                        </li>
+    
+                        <li class="nav_ul_li My-shopping">
+                            <a href="#" class="a-container-rigth">
+    
+                                <span class="a_text">
+                                    My shopping
+                                </span>
+    
+                                <div class="a_icon">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                </div>
+    
+                            </a>
+                        </li>
+    
+                    </ul>
+    
+                </section>
+    
+                <span class="burger-menu">
+                    <i class="fas fa-bars"></i>
+                </span>
+    
+            </nav>
+    
+        </header>
+
+        <section class="log-in_form">
+
+            <div class="title">
+                <h1>WELCOME</h1>
+            </div>
+
+            <form action="/log-in" method="post">
+
+                <div class="log-in_field one name">
+                    
+                    <div class="label">
+                        <label for="username">
+                            Username
+                        </label>
+                    </div>
+
+                    <div class="input">
+                        <input type="text" name="username" id="username" placeholder="Gustavo01" required>
+                    </div>
+
+                </div> 
+
+                <div class="log-in_field two password">
+
+                    <div class="label">
+                        <label for="password" aria-required="true">
+                            Password
+                        </label>
+                    </div>
+
+                    <div class="input">
+                        <input type="password" name="password" id="password" placeholder="KL_3lalepassword" required>
+                    </div>
+
+                </div>
+
+                <div class="log-in_button">
+                    <input type="submit" value="log in">
+                </div>
+
+            </form>
+
+        </section>
+
+        <footer class="footer">
+
+            <section class="footer_section metodo-de-pago">
+                <i class="fa-solid fa-credit-card"></i>
+                <h5>Pay by card or cash</h5>
+                <p>
+                    With MercadoLiebreCash you have interest-free installments with cards or cash at payment points. And it's always safe!
+                </p>
+            </section>
+
+            <section class="footer_section envios">
+                <i class="fa-solid fa-gift"></i>
+                <h5>Free shipping from $2,500</h5>    
+                <p>
+                    Just by being registered in MercadoLibre you have free shipping on thousands of products. It is a benefit of MercadoPuntos.
+                </p>        
+            </section>
+
+            <section class="footer_section seguridad">
+                <i class="fa-solid fa-user-shield"></i>
+                <h5>Security from start to finish</h5>
+                <p> You do not like? Give it back! At MercadoLiebre there is nothing you can't do because you are always protected
+                </p>
+            </section>
+
+            <sectio class="footer_section copy">
+                <p>
+                    Copyright &copy; 1999-2024 MercadoLiebre S.R.L.
+                </p>
+            </sectio>
+
+        </footer>
+
+
+    </body>
+</html>
