@@ -2,9 +2,4 @@ node_modules/
 package-lock.json
 .vscode
 desktop.ini
-1 - Ejercitación.pdf
-2 - Ejercitación PAD.pdf
-3 - Ejercitación Diseño adaptativo.pdf
-4 - Ejercitación Posicionamiento Avanzado Flexbox.pdf
-5 - Ejercitación Trabajando con Formularios.pdf
-6 - Ejercitación Organizando Elementos.pdf
+exercise/
