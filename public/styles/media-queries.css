@@ -21,47 +21,64 @@
     }
 
     .burger-menu{
+        
         display: none;
+    
     }
     
     .nav_botton{
+
         display: flex;
-        /* flex-wrap: wrap; */
         justify-content: space-around;
-        /* align-items: center; */
+        
     }
 
     .nav_ul{
+
         list-style-type: none;
         display: flex;
         justify-content:space-between;
         
     }
 
-    .nav_ul_li{
+    .nav_botton{
 
-        display: flex; 
+        height: 30px;
 
+        & .nav_ul_li{
 
-        & .a-container-left,
-          .a-container-rigth{
-            display: flex;
-        }
+            margin: 0px 5px;
 
-        & .a-container-rigth .a_text{
-            display: none;
-        }
-
-        & .a_text{
-            margin: 0px 5px ;
-        }
-
-        & .a_icon{
-            display: flex;
-            margin: 0px 10px 0px 0px;
-        }
+            & span{
         
+                display: flex;
+                margin: 0px 5px;
+        
+        
+                & .a-container-left,
+                  .a-container-rigth{
+                    display: flex;
+                }
+        
+                & .a-container-rigth .a_text{
+                    display: none;
+                }
+        
+                & .a_text{
+                    margin: 0px 5px ;
+        
+                    & i{
+                        display: flex;
+                        margin: 0px 10px 0px 0px;
+                    }
+                }
+                
+            }
+        }
+
+
     }
+
     
     /* ---MAIN--- */
     
