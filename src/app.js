@@ -9,8 +9,11 @@ const app = express();
 app.use(express.static(path.resolve(__dirname, '../public')));
 
 //call to server ↓
+
+const port = process.env.PORT || 4321
+
 app.listen(4321, () => {
-    console.log('server online in the port 4321 => http://localhost:4321');
+    console.log(`server online in the port 4321 => http://localhost:${port}`);
 });
 
 app.get('/', (req, res)=>{

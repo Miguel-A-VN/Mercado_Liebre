@@ -1,136 +1,194 @@
-/* ----BANER---- */
-.banner {
-    display: flex;
-    width: 100%;
-}
+/***********************************************************************************************/
 
-.banner img {
-    width: 100%;
-}
+    /* ====BANER==== */
 
-/* ----MAIN---- */
-.main {
-    background: #ebebeb;
-    display: flex;
-    margin: 10px  auto;
-    padding: 10px;
-    width: 90%;
-    flex-wrap: wrap;
-}
+    .banner {
+        display: flex;
+        width: 100%;
 
-/* ----CARDS---- */
-.g_cards {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #ebebeb;
-    width: 100%;
-    margin: 10px;
-}
+        & img {
+            width: 100%;
+        }
+    }
 
-.titular {
-    font-size: 24px;
-    width: 100%;
-    margin: 1px;
-    border-bottom: solid 1px #333a;
-}
+/***********************************************************************************************/
 
-.cards {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 5px;
-}
+    /* =====MAIN==== */
 
-.card {
-    display: flex;
-    margin: 5px;
-    width: 241px;
-    
-    background: #fff;
-    flex-wrap: wrap;
-    border-radius: 4px;
-    position: relative;
-    overflow: hidden;
-}
+    .main {
+        background: #ebebeb;
+        display: flex;
+        margin: 10px auto;
+        padding: 10px;
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
 
-.img-del-producto {
-    display: flex;
-    width: 100%;
-    padding: 5%;
-    margin-bottom: 2px;
-}
+        /* ----CARDS---- */
+    & .g_cards {
 
-.card img {
-    width: 100%;
-}
+        /*==========================================================*/
 
-/* truck */
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #ebebeb;
+        width: 100%;
+        margin: 10px;
 
-.truck {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    right: 20px;
-    bottom: 31%;
-}
-
-.truck .fa-truck {
-    border: 1px solid #39b54a;
-    border-radius: 50%;
-    display: block;
-    color: #39b54a;
-    font-size: 16px;
-    padding: 5px;
-    background-color: #fff;
-}
-
-/* ---Infon-producto--- */
-
-.info-del-producto {
-    border-top: solid 1px #ebebeb;
-    padding: 15px;
-    font-size: 18px;
-    width: 100%;
-    height: 36%;
-
-}
-
-.info_top {
-    width: 100%;
-    height: 68px;
-}
-.info_top_g1{
-    display: flex;
-    justify-content: space-evenly;
-    height: 34%;
-}
-
-.descuento,
-.descripcion_del_producto {
-    font-size: 16px;
-}
+        /*==========================================================*/
 
 
-.descuento{
-    color: #39b54a;
-}
+        & .titular {
+            font-size: 24px;
+            width: 100%;
+            margin: 1px;
+            border-bottom: solid 1px #333a;
+        }
+        
+        /*==========================================================*/
+        
+        & .cards {
 
-.descripcion_del_producto{
-    height: 30%;
-    text-overflow: ellipsis;
-    overflow: hidden; 
-    opacity: 0%;
-    transition: color 1ms;
-}
+            /*------------------------------------------------------*/
 
-.descripcion_del_producto:hover{
-    opacity: 100%
-}
+            display: flex;
+            width: 100%;
+            /* height: 680px; */
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 5px;
 
-.info_buttom-name{
-    height: 30%;
-}
-.nombre_del_producto{
-    font-size: 20px;
-}
+            /*------------------------------------------------------*/
+        
+            & .card {
+        
+                /*==================================================*/
+                
+                    /* display: flex; */
+                    margin: 22px 5px;
+                    width: 241px;
+                    border-radius: 4px;
+                    background: #0000;
+                    flex-wrap: wrap; 
+                    overflow: hidden;
+                
+                /*==================================================*/
+                
+                    /*---IMG-OF-PRODUCT*/
+                
+                    & .img-del-producto {
+                        display: flex;
+                        justify-content: center;
+                        width: 240px;
+                        padding: 5%;
+                        margin-bottom: 2px;
+                        background: #fff;
+                        border-radius: 4px 4px 0px 0px;
+
+                    
+                        & img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    
+                /*==================================================*/
+                
+                    /* ---Infon-producto--- */
+                    
+                    & .info-del-producto {
+                        position: relative;
+                        border-radius: 0px 0px 4px 4px;
+                        border-top: solid 1px #ebebeb;
+                        padding: 
+                        font-size: 18px;
+                        width: 100%;
+                        height: 37px;
+                        text-align: center;
+                        
+
+                        background: #fff;
+                        /* height: 36; */
+                    /*==================================================*/
+                    
+                            /*---truck--- */
+                    
+                        & .truck {
+                            position: absolute;
+                            width: 30px;
+                            height: 30px;
+                            right: 8px;
+                            top: -13px;
+                            z-index: 999;
+
+                            & .fa-truck {
+                                border: 1px solid #39b54a;
+                                border-radius: 50%;
+                                display: block;
+                                color: #39b54a;
+                                font-size: 16px;
+                                padding: 5px;
+                                background-color: #fff;
+                            }
+                        }
+                    
+                       
+                
+                    /*==================================================*/
+                    
+                            /*---PRECIO-Y-DESCUENTO---*/
+                
+                        & .precio-descuento {
+                            display: flex;
+                            justify-content: space-evenly;
+                            height: 95%;
+                            background: #fff;
+
+                            & .descuento{
+                                font-size: 16px;
+                                color: #39b54a;
+                            }
+                            
+                        }
+                        
+                       
+                    /*==================================================*/
+                
+                            /*---DESCRIPCION-DEL-PRODUCTO---*/
+                        
+                        & .descripcion-del-producto {
+
+                            
+
+                            font-size: 16px;
+                            width: 100%;
+                            height: 30%;
+                            text-overflow: ellipsis;
+                            background: #fff;
+                            /* justify-content: center; */
+                        
+                            height: 19px;
+                            
+                            overflow: hidden;
+                            /* height: 0px; */
+                            /* display: none; */
+                            
+                    
+                            & .nombre_del_producto {
+                                font-size: 20px;
+                                text-align: center;
+                                background: #fff;
+
+                            }
+                    
+                        }
+                        
+                    }
+                
+                }
+        }
+        
+    }
+    }
+
+/***********************************************************************************************/

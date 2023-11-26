@@ -48,11 +48,6 @@
     
 }
 
-.nav_top_form:hover{
-    outline: solid 1px #000a;
-    
-}
-
 
 .nav_top_form_button{
     background-color: #00000000;
@@ -77,6 +72,7 @@
 /* BUrguer-menu */
 
 .burger-menu{
+
     display: flex;
     background-color: #1259c3 ;
     width: 2em;
@@ -86,10 +82,20 @@
     text-align: center;
     border-radius: 4px;
     
+    & .fa-bars{
+        margin:auto;
+        color: #fff;
+        font-size: 1em;
+    }
 }
 
-.fa-bars{
-    margin:auto;
-    color: #fff;
-    font-size: 1em;
+
+/* ---ANIMACIONES--- */
+
+
+@media (hover: hover) {
+    .nav_top_form:hover {
+        outline: solid 1px #000a;
+    }
+
 }
