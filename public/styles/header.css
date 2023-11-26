@@ -48,12 +48,37 @@
     
 }
 
+.nav_botton{
 
-.nav_top_form_button{
-    background-color: #00000000;
-    padding: 3px;
-    border: 0px;
+    & .nav_ul_li{
+        
+        & a{
+            text-decoration: none;
+            color: #333b;
+            transition: 400ms;
+            margin: 0px 5px;
+            
+    
+            & span{
+    
+                position: relative;
+                margin: auto;
+    
+                &::before{
+                    position: absolute;
+                    content: '';
+                    bottom: 0;
+                    width: 0%;
+                    transition: 300ms;
+                    height: 2px;
+                    background-color: #111;
+                }
+            }
+        }
+
+    }
 }
+
 /* -------------------------------------------- */
 /* ---COPY--- */
 .nav_top_copy-header{
@@ -94,8 +119,33 @@
 
 
 @media (hover: hover) {
+
     .nav_top_form:hover {
         outline: solid 1px #000a;
+    }
+
+    .nav_ul_li:hover{
+
+        
+
+        & a{
+            color: #111;
+            scale: 1.1;
+
+            & span{
+
+                &::before{
+    
+                    position: absolute;
+                    content: '';
+                    bottom: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #111;
+                }
+            }
+
+        }
     }
 
 }

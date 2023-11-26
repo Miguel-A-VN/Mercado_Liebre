@@ -16,6 +16,7 @@
     /* =====MAIN==== */
 
     .main {
+
         background: #ebebeb;
         display: flex;
         margin: 10px auto;
@@ -25,6 +26,7 @@
         justify-content: center;
 
         /* ----CARDS---- */
+
     & .g_cards {
 
         /*==========================================================*/
@@ -53,7 +55,6 @@
 
             display: flex;
             width: 100%;
-            /* height: 680px; */
             flex-wrap: wrap;
             justify-content: space-around;
             margin: 5px;
@@ -62,53 +63,48 @@
         
             & .card {
         
-                /*==================================================*/
+            /*==================================================*/
                 
-                    /* display: flex; */
                     margin: 22px 5px;
                     width: 241px;
+                    height: 305px;
+                    background: #fff;
                     border-radius: 4px;
-                    background: #0000;
-                    flex-wrap: wrap; 
-                    overflow: hidden;
+                    justify-content: center;
                 
-                /*==================================================*/
+            /*==================================================*/
                 
-                    /*---IMG-OF-PRODUCT*/
-                
-                    & .img-del-producto {
+                /*---IMG-OF-PRODUCT*/
+        
+                & .img-del-producto {
+
                         display: flex;
                         justify-content: center;
-                        width: 240px;
+                        width: 100%;
                         padding: 5%;
                         margin-bottom: 2px;
-                        background: #fff;
                         border-radius: 4px 4px 0px 0px;
 
                     
                         & img {
                             width: 100%;
-                            object-fit: cover;
                         }
-                    }
+                }
                     
-                /*==================================================*/
+            /*==================================================*/
                 
-                    /* ---Infon-producto--- */
-                    
-                    & .info-del-producto {
+                /* ---Infon-producto--- */
+                
+                & .info-del-producto {
+
                         position: relative;
                         border-radius: 0px 0px 4px 4px;
                         border-top: solid 1px #ebebeb;
-                        padding: 
                         font-size: 18px;
                         width: 100%;
                         height: 37px;
                         text-align: center;
                         
-
-                        background: #fff;
-                        /* height: 36; */
                     /*==================================================*/
                     
                             /*---truck--- */
@@ -131,18 +127,17 @@
                                 background-color: #fff;
                             }
                         }
-                    
-                       
-                
+
                     /*==================================================*/
                     
                             /*---PRECIO-Y-DESCUENTO---*/
                 
                         & .precio-descuento {
+
                             display: flex;
                             justify-content: space-evenly;
-                            height: 95%;
-                            background: #fff;
+                            align-items: center;
+                            height: 100%;
 
                             & .descuento{
                                 font-size: 16px;
@@ -150,45 +145,36 @@
                             }
                             
                         }
-                        
-                       
+
                     /*==================================================*/
                 
                             /*---DESCRIPCION-DEL-PRODUCTO---*/
                         
                         & .descripcion-del-producto {
 
-                            
-
                             font-size: 16px;
                             width: 100%;
-                            height: 30%;
-                            text-overflow: ellipsis;
-                            background: #fff;
-                            /* justify-content: center; */
-                        
-                            height: 19px;
-                            
                             overflow: hidden;
-                            /* height: 0px; */
-                            /* display: none; */
                             
-                    
+                            /* text-overflow: ellipsis; */
+                            /* height: 0px; */
+                            /* justify-content: center; */              
+                            /* display: none; */
+
                             & .nombre_del_producto {
                                 font-size: 20px;
                                 text-align: center;
-                                background: #fff;
 
                             }
                     
                         }
                         
-                    }
-                
                 }
+                
+            }
         }
         
     }
-    }
+}
 
 /***********************************************************************************************/

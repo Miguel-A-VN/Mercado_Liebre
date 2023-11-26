@@ -10,6 +10,10 @@
     background-color: #ebebeb;
     border-radius: 4px;
 
+    & input{
+        border: none;
+    }
+
     & .form {
         margin: auto;
     }
@@ -44,6 +48,8 @@
         flex-wrap: wrap;
         margin-bottom: 0px;
         align-items: center;
+
+        
     }
 
     & label{
@@ -51,16 +57,28 @@
     }
 
     & .rellenar{
-        border: none;
+        
+        outline: none;
         width: 100%;
         height: 30px;
         margin-bottom: 20px;
         margin-left: 0px;
+        border-radius: 4px;
+        
+        &:hover{
+            border: 1px solid #1259c3;
+        }
+        
+        &:focus{
+            outline: 2px solid #0022aa;
+        }
     }
 
     & .selectores{
         display: flex;
         flex-wrap: wrap;
+
+        
 
     }
     
@@ -75,10 +93,13 @@
             width: 100%;
             margin-top: 2px;
             margin-bottom: 10px;
+
         }
+
     }
 
     & .radios{
+
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-evenly;
@@ -94,26 +115,38 @@
     }
 
     .buttons{
+
         display: flex;
         justify-content: space-around;
         flex-direction: row-reverse;
 
-        .button input{
+        & input{
             
+            cursor: pointer;
             background: #0000;
             border: none;
             margin: auto;
             color: #fff;
+                  
         }
 
-        .button {
+        & .button {
+
+            cursor: pointer;
             display: flex;
             background-color: #1259c3;
             width: 20%;
             height: 30px;
             text-align: center;
             border: 1px solid #3336;
+            border-radius: 4px;
+
+            &:hover{
+                background-color: #0022aa;
+            }
             
         }
+        
     }
+
 }

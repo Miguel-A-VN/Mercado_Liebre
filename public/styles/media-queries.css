@@ -42,10 +42,6 @@
 
         display: flex; 
 
-        & a{
-            text-decoration: none;
-            color: #333b;
-        }
 
         & .a-container-left,
           .a-container-rigth{
@@ -65,30 +61,30 @@
             margin: 0px 10px 0px 0px;
         }
         
-
-        
     }
     
     /* ---MAIN--- */
     
-    .card{
-    }
+        /* NORMAL */
     
     /* ---FOOTER--- */
-    
-    .footer_section{
-        width: 30%;
-    }
-    
-    .metodo-de-pago{
-        padding-right: 5px;
-        border-right: 1px solid #3336 ;
-    }
-    .seguridad{
-        padding-left: 5px;
-        border-left: 1px solid #3336 ;
+
+    .footer{
+
+        & .footer_section{
+            width: 30%;
+        }
         
-    }  
+        & .metodo-de-pago{
+            padding-right: 5px;
+            border-right: 1px solid #3336 ;
+        }
+        & .seguridad{
+            padding-left: 5px;
+            border-left: 1px solid #3336 ;
+            
+        }  
+    }
 
     /* ---sing up---*/
     .form_sing-up{
@@ -145,26 +141,45 @@
     /*------------------------------------------------------*/
 
         /* ---ANIMACIONES--- */
-
-
-        .card{
-            transition: all 100ms ease-in-out;
-            height: 300px;
-            
-
-
-                & .descripcion-del-producto{
-                    opacity: 0%;
-                    height: 0px;
-                    transition: all 100ms ease-in-out;
+    .main{
+        
+        & .g_cards{
     
-                    & .nombre-del-producto{
-                        opacity: 0%;
-                        height: 0px;
-                        transition: all 100ms ease-in-out;
+            & .cards{
+    
+                & .card{
+
+                    transition: all 100ms ease-in-out;
+                    background: #0000;
+                    /* overflow: hidden; */
+
+                    & .img-del-producto{
+                     background: #fff;
                     }
-                }
+    
+        
+                    & .precio-descuento{
+                        height: 86%;
+                        background: #fff;
+                        border-radius: 0px 0px 4px 4px;
+                    }
+        
+        
+                    & .descripcion-del-producto{
+                            background: #fff;
+                            transition: all 100ms ease-in-out;
             
+                            & .nombre-del-producto{
+
+                                height: 0px;
+                                background: #fff;
+                                transition: all 100ms ease-in-out;
+                            }
+                    }
+                
+                }
+    
+            }
         }
 
         .truck:hover{
@@ -173,11 +188,10 @@
             transition-duration: 1000ms;
         }
 
-        
-
         .card:hover{
 
             background: #fff;
+            height: 300px;
             box-shadow: 0px 0px 10px rgb(100, 100, 100);
             transition-duration: 300ms;
             scale: 1.1;
@@ -185,16 +199,19 @@
             & .info-del-producto{
                 height: 69px;
 
+                & .precio-descuento{
+                    border-radius: 0px;
+                }
+
                 & .descripcion-del-producto{
                     opacity: 100%;
                     height: 26px;
                     background-color: #fff;
-    
+                    border-radius: 0px 0px 4px 4px;
                     transition-duration: 300ms;
                     
                     & .nombre-del-producto{
-                        opacity: 95%;
-                        height: 15px;
+                        opacity: 100%;
                         transition-duration: 300ms;
                     }
                 }
@@ -202,21 +219,20 @@
 
             
         }
-
+    }
+        
     /*------------------------------------------------------*/
 
         /* ---SING-UP---*/
 
         & .form_sing-up{
-            width: 40%;
-
-            
+            width: 40%;   
         }
 
-    & .log-in_form{
+        & .log-in_form{
 
-        & .title{
-            margin-bottom: 3%;
+            & .title{
+                margin-bottom: 3%;
+            }
         }
-    }
 }

@@ -9,26 +9,33 @@
     height: 172px;
     margin: auto;
     border-top: 1px solid #3336;
-}
 
-.footer_section{
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
+    & .footer_section{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 
-.footer .fa-solid {
-    color: #1259c3;
-    font-size: 2em;
-    margin-bottom: 5px;
+    & .fa-solid {
+        color: #1259c3;
+        font-size: 2em;
+        margin-bottom: 5px;
+        
+        &:hover{
+            color : #0022aa;
+        }
+    }
+
+    & .envios{
+        width: 100%;
+    }
+    
+    & .copy{
+        color: #3339;
+        width: 100%;
+        font-size: 12px;
+    }
     
 }
 
-.envios{
-    width: 100%;
-}
 
-.copy{
-    color: #3339;
-    width: 100%;
-    font-size: 12px;
-}
+
