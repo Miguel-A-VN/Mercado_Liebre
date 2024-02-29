@@ -18,18 +18,16 @@
     <!-- Estilos en general ↓ -->
     <!-- NOTA: los links tambien son afectados por css -->
 
-    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/header-footer.css" />
 
-    <link rel="stylesheet" href="/styles/main-of-home.css" />
-
-    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
 
     <link rel="stylesheet" href="/styles/media-queries.css" />
 
     <!-- <link rel="stylesheet" href="/style/carrusel.css"> -->
 
     <!-- EL normalize que estoy creando ↓ -->
-    <link rel="stylesheet" href="/styles/general.css" />
+    <link rel="stylesheet" href="/styles/global-styles.css" />
 
     <!-- Font-awesome ↓ -->
 
@@ -52,405 +50,406 @@
 
 <body>
 
-    <header class="header">
+    <header class="header flx_property--center">
+        <div class="div__header property--Mwidth">
+            <nav class="nav bar-de-navegacion">
 
-        <nav class="nav bar-de-navegacion">
+                <section class="nav_top">
 
-            <section class="nav_top">
+                    <div class="nav_top_logo">
+                        <a href="/"><img src="/img/svg/logo-mercado-liebre.svg" alt="mercado-libre-logo" /></a>
+                    </div>
 
-                <div class="nav_top_logo">
-                    <a href="/"><img src="/img/svg/logo-mercado-liebre.svg" alt="mercado-libre-logo" /></a>
-                </div>
+                    <form class="nav_top_form barra-de-busqueda" action="" method="">
+                        <label class="nav_top_form_label-bar-serach" for="get"></label>
+                        <input class="nav_top_form_input-bar-search" type="search" id="get" name="get"
+                            placeholder="search..." />
+                        <button type="submit" class="nav_top_form_button button-bar-of-search"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
 
-                <form class="nav_top_form barra-de-busqueda" action="" method="">
-                    <label class="nav_top_form_label-bar-serach" for="get"></label>
-                    <input class="nav_top_form_input-bar-search" type="search" id="get" name="get"
-                        placeholder="search..." />
-                    <button type="submit" class="nav_top_form_button button-bar-of-search"><i
-                            class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
+                    <div class="nav_top_copy-header buy-in-installments-and-without-a-credit-card">
+                        <h3><i class="fa-solid fa-hand-holding-dollar"></i>buy in installments and without a credit card
+                        </h3>
+                    </div>
 
-                <div class="nav_top_copy-header buy-in-installments-and-without-a-credit-card">
-                    <h3><i class="fa-solid fa-hand-holding-dollar"></i>buy in installments and without a credit card
-                    </h3>
-                </div>
+                </section>
 
-            </section>
+                <section class="nav_botton">
 
-            <section class="nav_botton">
+                    <ul class="nav_ul nav_ul-left">
 
-                <ul class="nav_ul nav_ul-left">
+                        <li class="nav_ul_li Offers">
 
-                    <li class="nav_ul_li Offers">
+                            <a href="#" class="a-container-left">
+                                <span class="a_text">
+                                    Offers
+                                </span>
+                            </a>
 
-                        <a href="#" class="a-container-left">
-                            <span class="a_text">
-                                Offers
-                            </span>
-                        </a>
+                        </li>
 
-                    </li>
+                        <li class="nav_ul_li Official-store">
 
-                    <li class="nav_ul_li Official-store">
+                            <a href="#" class="a-container-left">
+                                <span class="a_text">
+                                    Official store
+                                </span>
+                            </a>
 
-                        <a href="#" class="a-container-left">
-                            <span class="a_text">
-                                Official store
-                            </span>
-                        </a>
+                        </li>
 
-                    </li>
+                        <li class="nav_ul_li sell">
 
-                    <li class="nav_ul_li sell">
+                            <a href="#" class="a-container-left">
+                                <span class="a_text">Sell</span>
+                            </a>
 
-                        <a href="#" class="a-container-left">
-                            <span class="a_text">Sell</span>
-                        </a>
+                        </li>
 
-                    </li>
+                        <li class="nav_ul_li Help">
 
-                    <li class="nav_ul_li Help">
+                            <a href="#" class="a-container-left">
+                                <span class="a_text">
+                                    Help
+                                </span>
+                            </a>
 
-                        <a href="#" class="a-container-left">
-                            <span class="a_text">
-                                Help
-                            </span>
-                        </a>
+                        </li>
 
-                    </li>
+                    </ul>
 
-                </ul>
+                    <ul class="nav_ul nav_ul-right">
 
-                <ul class="nav_ul nav_ul-right">
+                        <li class="nav_ul_li Sign-up">
+                            <a href="/sign-up" class="a-container-rigth">
 
-                    <li class="nav_ul_li Sign-up">
-                        <a href="/sign-up" class="a-container-rigth">
+                                <span class="a_text">
 
-                            <span class="a_text">
+                                    Sign up
 
-                                Sign up
+                                    <i class="fa-regular fa-solid fa-id-card"></i>
 
-                                <i class="fa-regular fa-solid fa-id-card"></i>
+                                </span>
 
-                            </span>
+                            </a>
+                        </li>
 
-                        </a>
-                    </li>
+                        <li class="nav_ul_li log-in">
+                            <a href="/log-in" class="a-container-rigth">
 
-                    <li class="nav_ul_li log-in">
-                        <a href="/log-in" class="a-container-rigth">
+                                <span class="a_text a_icon">
+                                    Log in
 
-                            <span class="a_text a_icon">
-                                Log in
+                                    <i class="fa-solid fa-right-to-bracket"></i>
+                                </span>
 
-                                <i class="fa-solid fa-right-to-bracket"></i>
-                            </span>
+                            </a>
+                        </li>
 
-                        </a>
-                    </li>
+                        <li class="nav_ul_li My-shopping">
+                            <a href="#" class="a-container-rigth">
 
-                    <li class="nav_ul_li My-shopping">
-                        <a href="#" class="a-container-rigth">
+                                <span class="a_text a_icon">
+                                    My shopping
 
-                            <span class="a_text a_icon">
-                                My shopping
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                </span>
 
-                                <i class="fa-solid fa-basket-shopping"></i>
-                            </span>
+                            </a>
+                        </li>
 
-                        </a>
-                    </li>
+                    </ul>
 
-                </ul>
+                </section>
 
-            </section>
+                <span class="burger-menu">
+                    <i class="fas fa-bars"></i>
+                </span>
 
-            <span class="burger-menu">
-                <i class="fas fa-bars"></i>
-            </span>
-
-        </nav>
+            </nav>
+        </div>
 
     </header>
 
-    <main class="main">
-
-        <section class="banner" id="banner">
-            <img src="img/img-home-banner.jpg" alt="banner" />
-        </section>
-        
-        <section class="cards">
-            <section role="grupo" class="g_cards cards-ultima-vista">
-
-                <div class="titular ultimas-vistas">
-                    <h2>Last see</h2>
-                </div>
-
-                <div class="cards">
-
-                    <article class="card cafetera">
-
-                        <section class="img-del-producto">
-                            <img src="/img/img-cafetera-moulinex.jpg" alt="cafetera" />
-                        </section>
-
-                        <section class="info-del-producto">
-
-                            <section class="truck">
-                                <i class="fa-solid fa-truck"></i>
-                            </section>
-
-                            <section class="precio-descuento">
-                                <p class="precio">$6.770</p>
-                                <p class="descuento">40% off</p>
-                            </section>
-
-                            <section class="descripcion-del-producto">
-
-                                <h3 class="nombre-del-producto">
-                                    Caffee Maker Moulinex
-                                </h3>
-
-                            </section>
-
-                        </section>
-
-                    </article>
-
-                    <article class="card macbook">
-
-                        <section class="img-del-producto">
-                            <img src="/img/img-macbook-pro-2019.jpg" alt="macbook" />
-                        </section>
-
-                        <section class="info-del-producto">
-
-
-                            <section class="truck">
-                                <i class="fa-solid fa-truck"></i>
-                            </section>
-
-                            <section class="precio-descuento">
-                                <p class="precio">$230.000</p>
-                                <p class="descuento">20% off</p>
-                            </section>
-
-                            <section class="descripcion-del-producto">
-
-                                <h3 class="nombre-del-producto">
-                                    MacBook Pro 2019
-                                </h3>
-
-                            </section>
-
-                        </section>
-
-                    </article>
-
-                    <article class="card samsung-galaxi-s10">
-
-                        <section class="img-del-producto">
-                            <img src="/img/img-samsung-galaxy-s10.jpg" alt="samsung_galaxi_s10" />
-                        </section>
-
-                        <section class="info-del-producto">
-
-
-                            <section class="truck">
-                                <i class="fa-solid fa-truck"></i>
-                            </section>
-
-                            <section class="precio-descuento">
-
-                                <p class="precio">$70.500</p>
-                                <p class="descuento">10% off</p>
-
-                            </section>
-
-                            <section class="descripcion-del-producto">
-
-                                <h3 class="nombre-del-producto">
-                                    Samsung Galaxy
-                                </h3>
-
-                            </section>
-
-                        </section>
-
-                    </article>
-
-                    <article class="card smart-tv">
-
-                        <section class="img-del-producto">
-                            <img src="/img/img-tv-samsung-smart.jpg" alt="smart_tv" />
-                        </section>
-
-                        <section class="info-del-producto">
-
-                            <section class="truck">
-                                <i class="fa-solid fa-truck"></i>
-                            </section>
-
-                            <section class="precio-descuento">
-
-                                <p class="precio">$23.200</p>
-                                <p class="descuento">5% off</p>
-
-                            </section>
-
-                            <section class="descripcion-del-producto">
-
-                                <h3 class="nombre-del-producto">
-                                    SmartTv Samsung 43"
-                                </h3>
-
-                            </section>
-
-                        </section>
-
-                    </article>
-
-                </div>
-
+    <main class="main flx_property--center">
+        <div class="div__main">
+            <section class="banner" id="banner">
+                <img src="img/img-home-banner.jpg" alt="banner" />
             </section>
 
-            <section role="grupo" class="g_cards cards-ofertas">
+            <section role="grupo" class="section__cards property--Mwidth">
+                <section class="g_cards last-see-cards">
 
-                <div class="titular ofertas">
-                    <h2>Offers</h2>
-                </div>
+                    <div class="headline last-see-cards">
+                        <h2>Last see</h2>
+                    </div>
 
-                <div class="cards">
+                    <div class="cards">
 
-                    <article class="card cafetera">
+                        <article class="card cafetera">
 
-                        <section class="img-del-producto">
-
-                            <img src="/img/img-cafetera-moulinex.jpg" alt="cafetera" />
-
-                        </section>
-
-                        <section class="info-del-producto">
-
-                            <section class="truck">
-                                <i class="fa-solid fa-truck"></i>
+                            <section class="product-img">
+                                <img src="/img/img-cafetera-moulinex.jpg" alt="cafetera" />
                             </section>
 
-                            <section class="precio-descuento">
-                                <p class="precio">$6.770</p>
-                                <p class="descuento">40% off</p>
-                            </section>
+                            <section class="product-info">
 
-                            <section class="descripcion-del-producto">
+                                <section class="truck">
+                                    <i class="fa-solid fa-truck"></i>
+                                </section>
 
-                                <h3 class="nombre-del-producto">
-                                    Caffee Maker Moulinex
-                                </h3>
+                                <section class="price-discount">
+                                    <p class="precio">$6.770</p>
+                                    <p class="descuento">40% off</p>
+                                </section>
 
-                            </section>
+                                <section class="product-description">
 
-                        </section>
+                                    <h3 class="product-name">
+                                        Caffee Maker Moulinex
+                                    </h3>
 
-                    </article>
-
-                    <article class="card macbook">
-
-                        <section class="img-del-producto">
-                            <img src="/img/img-macbook-pro-2019.jpg" alt="macbook" />
-                        </section>
-
-                        <section class="info-del-producto">
-
-
-                            <section class="truck">
-                                <i class="fa-solid fa-truck"></i>
-                            </section>
-
-                            <section class="precio-descuento">
-                                <p class="precio">$230.000</p>
-                                <p class="descuento">20% off</p>
-                            </section>
-
-                            <section class="descripcion-del-producto">
-
-                                <h3 class="nombre-del-producto">
-                                    MacBook Pro 2019
-                                </h3>
+                                </section>
 
                             </section>
 
-                        </section>
+                        </article>
 
-                    </article>
+                        <article class="card macbook">
 
-                    <article class="card samsung-galaxi-s10">
-
-                        <section class="img-del-producto">
-                            <img src="/img/img-samsung-galaxy-s10.jpg" alt="samsung_galaxi_s10" />
-                        </section>
-
-                        <section class="info-del-producto">
-
-
-                            <section class="truck">
-                                <i class="fa-solid fa-truck"></i>
+                            <section class="product-img">
+                                <img src="/img/img-macbook-pro-2019.jpg" alt="macbook" />
                             </section>
 
-                            <section class="precio-descuento">
+                            <section class="product-info">
 
-                                <p class="precio">$70.500</p>
-                                <p class="descuento">10% off</p>
 
-                            </section>
+                                <section class="truck">
+                                    <i class="fa-solid fa-truck"></i>
+                                </section>
 
-                            <section class="descripcion-del-producto">
+                                <section class="price-discount">
+                                    <p class="precio">$230.000</p>
+                                    <p class="descuento">20% off</p>
+                                </section>
 
-                                <h3 class="nombre-del-producto">
-                                    Samsung Galaxy
-                                </h3>
+                                <section class="product-description">
 
-                            </section>
+                                    <h3 class="product-name">
+                                        MacBook Pro 2019
+                                    </h3>
 
-                        </section>
-
-                    </article>
-
-                    <article class="card smart-tv">
-
-                        <section class="img-del-producto">
-                            <img src="/img/img-tv-samsung-smart.jpg" alt="smart_tv" />
-                        </section>
-
-                        <section class="info-del-producto">
-
-                            <section class="truck">
-                                <i class="fa-solid fa-truck"></i>
-                            </section>
-
-                            <section class="precio-descuento">
-
-                                <p class="precio">$23.200</p>
-                                <p class="descuento">5% off</p>
+                                </section>
 
                             </section>
 
-                            <section class="descripcion-del-producto">
+                        </article>
 
-                                <h3 class="nombre-del-producto">
-                                    SmartTv Samsung 43"
-                                </h3>
+                        <article class="card samsung-galaxi-s10">
+
+                            <section class="product-img">
+                                <img src="/img/img-samsung-galaxy-s10.jpg" alt="samsung_galaxi_s10" />
+                            </section>
+
+                            <section class="product-info">
+
+
+                                <section class="truck">
+                                    <i class="fa-solid fa-truck"></i>
+                                </section>
+
+                                <section class="price-discount">
+
+                                    <p class="precio">$70.500</p>
+                                    <p class="descuento">10% off</p>
+
+                                </section>
+
+                                <section class="product-description">
+
+                                    <h3 class="product-name">
+                                        Samsung Galaxy
+                                    </h3>
+
+                                </section>
 
                             </section>
 
-                        </section>
+                        </article>
 
-                    </article>
+                        <article class="card smart-tv">
 
-                </div>
+                            <section class="product-img">
+                                <img src="/img/img-tv-samsung-smart.jpg" alt="smart_tv" />
+                            </section>
 
+                            <section class="product-info">
+
+                                <section class="truck">
+                                    <i class="fa-solid fa-truck"></i>
+                                </section>
+
+                                <section class="price-discount">
+
+                                    <p class="precio">$23.200</p>
+                                    <p class="descuento">5% off</p>
+
+                                </section>
+
+                                <section class="product-description">
+
+                                    <h3 class="product-name">
+                                        SmartTv Samsung 43"
+                                    </h3>
+
+                                </section>
+
+                            </section>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+                <section role="grupo" class="g_cards offers-cards">
+
+                    <div class="headline ofertas">
+                        <h2>Offers</h2>
+                    </div>
+
+                    <div class="cards">
+
+                        <article class="card cafetera">
+
+                            <section class="product-img">
+
+                                <img src="/img/img-cafetera-moulinex.jpg" alt="cafetera" />
+
+                            </section>
+
+                            <section class="product-info">
+
+                                <section class="truck">
+                                    <i class="fa-solid fa-truck"></i>
+                                </section>
+
+                                <section class="price-discount">
+                                    <p class="precio">$6.770</p>
+                                    <p class="descuento">40% off</p>
+                                </section>
+
+                                <section class="product-description">
+
+                                    <h3 class="product-name">
+                                        Caffee Maker Moulinex
+                                    </h3>
+
+                                </section>
+
+                            </section>
+
+                        </article>
+
+                        <article class="card macbook">
+
+                            <section class="product-img">
+                                <img src="/img/img-macbook-pro-2019.jpg" alt="macbook" />
+                            </section>
+
+                            <section class="product-info">
+
+
+                                <section class="truck">
+                                    <i class="fa-solid fa-truck"></i>
+                                </section>
+
+                                <section class="price-discount">
+                                    <p class="precio">$230.000</p>
+                                    <p class="descuento">20% off</p>
+                                </section>
+
+                                <section class="product-description">
+
+                                    <h3 class="product-name">
+                                        MacBook Pro 2019
+                                    </h3>
+
+                                </section>
+
+                            </section>
+
+                        </article>
+
+                        <article class="card samsung-galaxi-s10">
+
+                            <section class="product-img">
+                                <img src="/img/img-samsung-galaxy-s10.jpg" alt="samsung_galaxi_s10" />
+                            </section>
+
+                            <section class="product-info">
+
+
+                                <section class="truck">
+                                    <i class="fa-solid fa-truck"></i>
+                                </section>
+
+                                <section class="price-discount">
+
+                                    <p class="precio">$70.500</p>
+                                    <p class="descuento">10% off</p>
+
+                                </section>
+
+                                <section class="product-description">
+
+                                    <h3 class="product-name">
+                                        Samsung Galaxy
+                                    </h3>
+
+                                </section>
+
+                            </section>
+
+                        </article>
+
+                        <article class="card smart-tv">
+
+                            <section class="product-img">
+                                <img src="/img/img-tv-samsung-smart.jpg" alt="smart_tv" />
+                            </section>
+
+                            <section class="product-info">
+
+                                <section class="truck">
+                                    <i class="fa-solid fa-truck"></i>
+                                </section>
+
+                                <section class="price-discount">
+
+                                    <p class="precio">$23.200</p>
+                                    <p class="descuento">5% off</p>
+
+                                </section>
+
+                                <section class="product-description">
+
+                                    <h3 class="product-name">
+                                        SmartTv Samsung 43"
+                                    </h3>
+
+                                </section>
+
+                            </section>
+
+                        </article>
+
+                    </div>
+
+                </section>
             </section>
-        </section>
-
+        </div>
     </main>
 
     <footer class="footer">

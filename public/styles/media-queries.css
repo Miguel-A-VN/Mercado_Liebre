@@ -1,255 +1,224 @@
+@media screen and (min-width: 600px) {
+	.banner {
+		height: 30vh;
+		img {
+			object-fit: cover;
+		}
+	}
+}
+
 /* ---TABLET--- */
 @media screen and (min-width: 768px) {
-    
-    /* ---HEADER--- */
-    .nav_top{
-        justify-content: center;
-    }
+	/* ---HEADER--- */
+	.nav_top {
+		justify-content: center;
+	}
 
-    .nav_top_form{
-        width: 25%;
-        margin-left: 5%;
+	.nav_top_form {
+		width: 25%;
+		margin-left: 5%;
 
-        & .nav_top_form_input-bar-search{
-            width: 92%;
-        }
-    }
+		& .nav_top_form_input-bar-search {
+			width: 92%;
+		}
+	}
 
-    .nav_top_copy-header{
-        margin-left: 5% ;
-        width: 160px;
-    }
+	.nav_top_copy-header {
+		margin-left: 5%;
+		width: 160px;
+	}
 
-    .burger-menu{
-        
-        display: none;
-    
-    }
-    
-    .nav_botton{
+	.burger-menu {
+		display: none;
+	}
 
-        display: flex;
-        justify-content: space-around;
-        
-    }
+	.nav_botton {
+		display: flex;
+		justify-content: space-around;
+	}
 
-    .nav_ul{
+	.nav_ul {
+		list-style-type: none;
+		display: flex;
+		justify-content: space-between;
+	}
 
-        list-style-type: none;
-        display: flex;
-        justify-content:space-between;
-        
-    }
+	.nav_botton {
+		height: 30px;
 
-    .nav_botton{
+		& .nav_ul_li {
+			margin: 0px 5px;
 
-        height: 30px;
+			& span {
+				display: flex;
+				margin: 0px 5px;
 
-        & .nav_ul_li{
+				& .a-container-left,
+				.a-container-rigth {
+					display: flex;
+				}
 
-            margin: 0px 5px;
+				& .a-container-rigth .a_text {
+					display: none;
+				}
 
-            & span{
-        
-                display: flex;
-                margin: 0px 5px;
-        
-        
-                & .a-container-left,
-                  .a-container-rigth{
-                    display: flex;
-                }
-        
-                & .a-container-rigth .a_text{
-                    display: none;
-                }
-        
-                & .a_text{
-                    margin: 0px 5px ;
-        
-                    & i{
-                        display: flex;
-                        margin: 0px 10px 0px 0px;
-                    }
-                }
-                
-            }
-        }
+				& .a_text {
+					margin: 0px 5px;
 
+					& i {
+						display: flex;
+						margin: 0px 10px 0px 0px;
+					}
+				}
+			}
+		}
+	}
 
-    }
+	/* ---MAIN--- */
 
-    
-    /* ---MAIN--- */
-    
-        /* NORMAL */
-    
-    /* ---FOOTER--- */
+	/* NORMAL */
 
-    .footer{
+	/* ---FOOTER--- */
 
-        & .footer_section{
-            width: 30%;
-        }
-        
-        & .metodo-de-pago{
-            padding-right: 5px;
-            border-right: 1px solid #3336 ;
-        }
-        & .seguridad{
-            padding-left: 5px;
-            border-left: 1px solid #3336 ;
-            
-        }  
-    }
+	.footer {
+		& .footer_section {
+			width: 30%;
+		}
 
-    /* ---sing up---*/
-    .form_sing-up{
-        width: 50%;
+		& .metodo-de-pago {
+			padding-right: 5px;
+			border-right: 1px solid #3336;
+		}
+		& .seguridad {
+			padding-left: 5px;
+			border-left: 1px solid #3336;
+		}
+	}
 
-        & .rellenar{
-            width: 200%;
-        }
-    }
+	/* ---sing up---*/
+	.form_sing-up {
+		width: 50%;
 
-    .log-in_form{
+		& .rellenar {
+			width: 200%;
+		}
+	}
 
-        width: 50%;
-        
-        & .title{
-            margin-bottom: 6%;
-        }
+	.log-in_form {
+		width: 50%;
 
-
-    }
+		& .title {
+			margin-bottom: 6%;
+		}
+	}
 }
 
 /*======================================================*/
 
 /* ---LAPTOP--- */
 @media screen and (min-width: 1024px) {
+	/*-------------------------------*/
 
-    /*-------------------------------*/
+	/* ---HEADER--- */
 
-    /* ---HEADER--- */
+	.nav_top_logo {
+		width: 15%;
+	}
 
-    .nav_top_logo{
-        width: 15%;
-    }
+	.nav_top_form {
+		width: 26%;
 
-    .nav_top_form{
-        width: 26%;
+		margin: 0% 5%;
+	}
 
-        margin: 0% 5%;
-        
-    }
-
-    /* .nav_top_copy-header{
+	/* .nav_top_copy-header{
         
     } */
 
-    & .nav_ul_li{
+	.nav_ul_li {
+		.a-container-rigth .a_text {
+			display: flex;
+		}
+	}
+	/*------------------------------------------------------*/
 
-        & .a-container-rigth .a_text{
-            display: flex;
-        }
-    
-    }
-    /*------------------------------------------------------*/
+	/* ---ANIMACIONES--- */
+	.main {
+		.cards {
+			height: 350px;
+		}
+		.card {
+			transition: all 100ms ease-in-out;
+			height: 270px;
+			overflow: hidden;
 
-        /* ---ANIMACIONES--- */
-    .main{
-        
-        & .g_cards{
-    
-            & .cards{
-    
-                & .card{
+			product-img {
+				background: #fff;
+			}
 
-                    transition: all 100ms ease-in-out;
-                    background: #0000;
-                    /* overflow: hidden; */
+			.price-discount {
+				background: #fff;
+				border-radius: 0px 0px 4px 4px;
+			}
 
-                    & .img-del-producto{
-                     background: #fff;
-                    }
-    
-        
-                    & .precio-descuento{
-                        height: 86%;
-                        background: #fff;
-                        border-radius: 0px 0px 4px 4px;
-                    }
-        
-        
-                    & .descripcion-del-producto{
-                            background: #fff;
-                            transition: all 100ms ease-in-out;
-            
-                            & .nombre-del-producto{
+			.product-description {
+				background: #fff;
+				transition: all 100ms ease-in-out;
 
-                                height: 0px;
-                                background: #fff;
-                                transition: all 100ms ease-in-out;
-                            }
-                    }
-                
-                }
-    
-            }
-        }
+				.product-name {
+					height: 0px;
+					background: #fff;
+					transition: all 100ms ease-in-out;
+				}
+			}
+		}
 
-        .truck:hover{
+		.truck:hover {
+			transform: rotate(-60deg);
+			transition-duration: 1000ms;
+		}
 
-            transform: rotate(-60deg);
-            transition-duration: 1000ms;
-        }
+		.card:hover {
+			background: #fff;
+			height: 300px;
+			box-shadow: 0px 0px 10px rgb(100, 100, 100);
+			transition-duration: 300ms;
+			scale: 1.1;
 
-        .card:hover{
+			.product-info {
+				/* height: 50%; */
 
-            background: #fff;
-            height: 300px;
-            box-shadow: 0px 0px 10px rgb(100, 100, 100);
-            transition-duration: 300ms;
-            scale: 1.1;
+				.price-discount {
+					border-radius: 0px;
+				}
 
-            & .info-del-producto{
-                height: 69px;
+				.product-description {
+					opacity: 100%;
+					height: 26px;
+					background-color: #fff;
+					border-radius: 0px 0px 4px 4px;
+					transition-duration: 300ms;
 
-                & .precio-descuento{
-                    border-radius: 0px;
-                }
+					.product-name {
+						opacity: 100%;
+						transition-duration: 300ms;
+					}
+				}
+			}
+		}
+	}
 
-                & .descripcion-del-producto{
-                    opacity: 100%;
-                    height: 26px;
-                    background-color: #fff;
-                    border-radius: 0px 0px 4px 4px;
-                    transition-duration: 300ms;
-                    
-                    & .nombre-del-producto{
-                        opacity: 100%;
-                        transition-duration: 300ms;
-                    }
-                }
-            }
+	/*------------------------------------------------------*/
 
-            
-        }
-    }
-        
-    /*------------------------------------------------------*/
+	/* ---SING-UP---*/
 
-        /* ---SING-UP---*/
+	& .form_sing-up {
+		width: 40%;
+	}
 
-        & .form_sing-up{
-            width: 40%;   
-        }
-
-        & .log-in_form{
-
-            & .title{
-                margin-bottom: 3%;
-            }
-        }
+	& .log-in_form {
+		& .title {
+			margin-bottom: 3%;
+		}
+	}
 }
